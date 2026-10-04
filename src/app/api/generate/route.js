@@ -22,7 +22,7 @@ export async function POST(request) {
   // Routes through the Vercel AI Gateway (AI_GATEWAY_API_KEY on the server, or
   // the project's OIDC token on Vercel).
   const result = streamText({
-    model: 'openai/gpt-5.4',
+    model: 'openai/gpt-4o-mini',
     prompt: parsed.data.prompt,
     onError({error}) {
       console.error('[generate] stream error:', error)
