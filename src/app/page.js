@@ -67,6 +67,9 @@ export default function Home() {
           placeholder="e.g. Summarize the Next.js README for a product manager in five bullets"
           className="w-full rounded-lg border border-slate-300 p-3 text-sm shadow-sm focus:border-slate-400 focus:outline-none"
         />
+        <p className="text-right text-xs text-slate-400" aria-live="polite">
+          {prompt.length} characters
+        </p>
         <button
           type="submit"
           disabled={loading || prompt.trim() === ''}
