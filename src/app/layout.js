@@ -2,8 +2,8 @@ import './globals.css'
 import {Analytics} from '@vercel/analytics/next'
 
 export const metadata = {
-  title: 'Nicelydone Ops Console',
-  description: 'Operations console for Nicelydone services.',
+  title: 'Nicelydone AI Briefs',
+  description: 'Generate AI briefs from any prompt, streamed via the Vercel AI Gateway.',
 }
 
 export default function RootLayout({children}) {
